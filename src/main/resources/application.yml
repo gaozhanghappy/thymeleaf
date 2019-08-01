@@ -1,0 +1,14 @@
+
+server:
+  port: 8888
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/springboot?serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+    password: 123456
+mybatis:
+  type-aliases-package: git.gaozhanghapppy.mapper
+  mapper-locations: classpath:mapper/*.xml
